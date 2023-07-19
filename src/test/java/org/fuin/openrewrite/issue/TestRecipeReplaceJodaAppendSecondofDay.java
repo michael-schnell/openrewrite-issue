@@ -14,7 +14,7 @@ class TestRecipeReplaceJodaAppendSecondofDay implements RewriteTest {
         spec.recipe(new ReplaceJodaAppendSecondofDayRecipe())
                 .parser(JavaParser.fromJavaVersion()
                         .logCompilationWarningsAndErrors(true)
-                        .classpath("joda"));
+                        .classpath("joda-time"));
     }
 
     @Test
